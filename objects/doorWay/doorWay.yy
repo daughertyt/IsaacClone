@@ -1,0 +1,101 @@
+{
+    "id": "d0df3e6e-0bf2-426a-89db-bab8ab08ac87",
+    "modelName": "GMObject",
+    "mvc": "1.0",
+    "name": "doorWay",
+    "eventList": [
+        {
+            "id": "c648b321-242f-4197-8366-16237222d705",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "d0df3e6e-0bf2-426a-89db-bab8ab08ac87"
+        },
+        {
+            "id": "df4e8a57-be2e-4166-b160-81e63be61dee",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "bb1e8f19-2e32-48c0-8035-935ef43f6897",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "d0df3e6e-0bf2-426a-89db-bab8ab08ac87"
+        },
+        {
+            "id": "38c48162-c49d-4234-90e1-fe92cc285412",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "d0df3e6e-0bf2-426a-89db-bab8ab08ac87"
+        }
+    ],
+    "maskSpriteId": "00000000-0000-0000-0000-000000000000",
+    "overriddenProperties": null,
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "persistent": false,
+    "physicsAngularDamping": 0.1,
+    "physicsDensity": 0.5,
+    "physicsFriction": 0.2,
+    "physicsGroup": 0,
+    "physicsKinematic": false,
+    "physicsLinearDamping": 0.1,
+    "physicsObject": false,
+    "physicsRestitution": 0.1,
+    "physicsSensor": false,
+    "physicsShape": 1,
+    "physicsShapePoints": null,
+    "physicsStartAwake": true,
+    "properties": [
+        {
+            "id": "41cb0a56-3d27-4462-abaf-99544127a5fb",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "roomID",
+            "varType": 0
+        },
+        {
+            "id": "723606a9-ad01-4b27-8b42-9a34eade4b68",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "doorLocked",
+            "varType": 0
+        },
+        {
+            "id": "c3868bcd-fbe8-49b5-bf47-cf69e3fa4c70",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "isAWall",
+            "varType": 0
+        }
+    ],
+    "solid": false,
+    "spriteId": "95c15737-94dc-4b90-b7c7-a79abe8804b7",
+    "visible": true
+}

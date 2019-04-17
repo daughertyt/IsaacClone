@@ -13,6 +13,16 @@
             "enumb": 0,
             "eventtype": 3,
             "m_owner": "1811a20f-e987-4982-a46a-0b98724f2c19"
+        },
+        {
+            "id": "ab988f16-4b3c-4714-ad40-17acef5757e0",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 1,
+            "m_owner": "1811a20f-e987-4982-a46a-0b98724f2c19"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -44,6 +54,20 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "curHealth",
+            "varType": 0
+        },
+        {
+            "id": "276bc242-e5ec-424b-9bc3-b21d39033ff6",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "damage",
             "varType": 0
         }
     ],

@@ -3,11 +3,11 @@
 
 if (self.canSpawn == 1){
 	var minSpawnX = 192;
-	var minSpawnY = 192;
+	var minSpawnY = 192+64;
 	var maxSpawnX = room_width-192;
 	var maxSpawnY = room_height-192;
-	var xDistance = (maxSpawnX-192)/64;
-	var yDistance = (maxSpawnY-192)/64;
+	var xDistance = (maxSpawnX)/64;
+	var yDistance = (maxSpawnY)/64;
 	var spawnedX = array_create(numEnemies);
 	var spawnedY = array_create(numEnemies);
 	for (var i = 0;i<numEnemies;i+=1){
@@ -20,8 +20,12 @@ if (self.canSpawn == 1){
 			}
 		}
 		if (ableToSpawn == 1){
-			
-			instance_create_depth(chanceX*64,chanceY*64,0,walkerEnemy);
+			if(self.enemyType==0){	
+				instance_create_depth(chanceX*64,chanceY*64,0,walkerEnemy);
+			}
+			else if (self.enemyType==1){
+				instance_create_depth(chanceX*64,chanceY*64,0,turretEnemy);
+			}
 			spawnedX[i]=chanceX;
 			spawnedY[i]=chanceY;
 		}

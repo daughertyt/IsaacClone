@@ -15,21 +15,31 @@
             "m_owner": "c5ff9cc6-8d76-46e8-b068-ffd69114a9a6"
         },
         {
-            "id": "3cb4dbe3-e020-48a5-b673-ee4d36289352",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "bb1e8f19-2e32-48c0-8035-935ef43f6897",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "c5ff9cc6-8d76-46e8-b068-ffd69114a9a6"
-        },
-        {
             "id": "3f6bf291-c5ad-46d9-9a32-87e55a4bc4e3",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "6fef60c2-b729-4e41-abb0-7a64d14da56d",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "c5ff9cc6-8d76-46e8-b068-ffd69114a9a6"
+        },
+        {
+            "id": "b076fec9-8ce6-44a9-9779-e6ed410a455f",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 5,
+            "eventtype": 7,
+            "m_owner": "c5ff9cc6-8d76-46e8-b068-ffd69114a9a6"
+        },
+        {
+            "id": "c46442a7-966c-4c8d-961e-e58969984bae",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "d0df3e6e-0bf2-426a-89db-bab8ab08ac87",
             "enumb": 0,
             "eventtype": 4,
             "m_owner": "c5ff9cc6-8d76-46e8-b068-ffd69114a9a6"
@@ -92,6 +102,20 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "curSpeed",
+            "varType": 0
+        },
+        {
+            "id": "144ee1ea-52e7-4df4-92f6-0213c8e58dee",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "damage",
             "varType": 0
         }
     ],

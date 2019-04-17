@@ -5,19 +5,19 @@ if (self.doorLocked==0){
 	if (self.x==room_width/2){
 		
 		other.x=room_width/2;
-		if (self.y==32){
+		if (self.y==32+64){
 			other.y=(room_height-96);
 		}
-		else if(self.y==room_height/2){
-			other.y=room_height/2;
+		else if(self.y==room_height/2+32){
+			other.y=room_height/2+64;
 		}
 		else{
-			other.y=96;
+			other.y=96+64;
 		}
 	}
 	else{
 		
-		other.y=room_height/2;
+		other.y=room_height/2+32;
 		if (self.x==32){
 			other.x=(room_width-96);
 		}
@@ -28,8 +28,6 @@ if (self.doorLocked==0){
 			other.x=96;
 		}
 	}
-	//other.y=room_height/2;
-	show_debug_message(string(self.roomID));
 }
 else{
 	other.x=other.oldX;

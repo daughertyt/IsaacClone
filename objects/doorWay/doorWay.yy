@@ -93,6 +93,20 @@
             "value": "1",
             "varName": "isAWall",
             "varType": 0
+        },
+        {
+            "id": "19a2847c-e501-4d6d-80ab-b85703f4fe29",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "doorType",
+            "varType": 0
         }
     ],
     "solid": false,

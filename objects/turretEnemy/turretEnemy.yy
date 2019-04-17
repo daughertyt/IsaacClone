@@ -68,6 +68,20 @@
             "value": "0",
             "varName": "curFireTime",
             "varType": 0
+        },
+        {
+            "id": "b32a8888-6a31-42d7-aaa4-cef14275d85d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "damage2",
+            "varType": 0
         }
     ],
     "solid": false,

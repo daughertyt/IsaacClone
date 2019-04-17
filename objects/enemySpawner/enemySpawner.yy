@@ -91,21 +91,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "enemyType1",
-            "varType": 0
-        },
-        {
-            "id": "af26d925-66d5-420b-aa32-af7e0d8498c0",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "enemyType2",
+            "varName": "enemyType",
             "varType": 0
         }
     ],

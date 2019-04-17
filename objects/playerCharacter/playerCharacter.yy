@@ -33,6 +33,46 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "bb1e8f19-2e32-48c0-8035-935ef43f6897"
+        },
+        {
+            "id": "3951530f-eb15-4089-93a4-6bfb2f78deb4",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "1811a20f-e987-4982-a46a-0b98724f2c19",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "bb1e8f19-2e32-48c0-8035-935ef43f6897"
+        },
+        {
+            "id": "d2b88695-8fa3-468e-a3d0-7cadcad2ab18",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "c5ff9cc6-8d76-46e8-b068-ffd69114a9a6",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "bb1e8f19-2e32-48c0-8035-935ef43f6897"
+        },
+        {
+            "id": "3c88bd0f-6003-45d3-86ca-82e4a610465c",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 4,
+            "eventtype": 7,
+            "m_owner": "bb1e8f19-2e32-48c0-8035-935ef43f6897"
+        },
+        {
+            "id": "7940d01f-ce84-4067-bdc3-16f42ba0d317",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "8f036b66-1899-40ff-a7f1-d9a8326b2cc1",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "bb1e8f19-2e32-48c0-8035-935ef43f6897"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -76,7 +116,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1",
+            "value": ".1",
             "varName": "fireRate",
             "varType": 0
         },
@@ -104,7 +144,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "5",
+            "value": "10",
             "varName": "playerDamage",
             "varType": 0
         },
@@ -118,7 +158,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "20",
+            "value": "6",
             "varName": "curHealth",
             "varType": 0
         },
@@ -132,7 +172,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "20",
+            "value": "6",
             "varName": "maxHealth",
             "varType": 0
         },
@@ -190,6 +230,62 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "curSpeedY",
+            "varType": 0
+        },
+        {
+            "id": "4faa0197-1608-47bf-a987-c2cf86fe612a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "mercyTimer",
+            "varType": 0
+        },
+        {
+            "id": "b386cea6-27dc-4f62-a5e5-1b6fecd5680a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "curMercyTimer",
+            "varType": 0
+        },
+        {
+            "id": "59c0f0d5-bca1-42d3-8e08-a397b84eca0b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "curArmor",
+            "varType": 0
+        },
+        {
+            "id": "2fc0d3b2-7424-46da-874b-bc265399aea0",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "3",
+            "varName": "projectileSpeed",
             "varType": 0
         }
     ],

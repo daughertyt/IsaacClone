@@ -2,7 +2,9 @@
 // You can write your code in this editor
 randomize();
 persistent=true;
+global.UI = instance_create_depth(0,0,1,UIOverlay);
 global.firstFloor = ds_grid_create(mapHeight,mapWidth);
+
 var roomHeight = room_height;
 var roomWidth = room_width;
 global.startRoom = room_add();
@@ -104,10 +106,14 @@ while (specialRooms<2){
 				room_set_persistent(roomList[roomCount+specialRooms],true);
 				ds_grid_add(global.firstFloor,tempX,tempY,roomList[roomCount+specialRooms]);
 				if (specialRooms==0){
-					room_instance_add(roomList[roomCount+specialRooms],roomWidth/2,roomHeight/2,itemRoomMarker);
+					room_instance_add(roomList[roomCount+specialRooms],roomWidth/2,roomHeight/2+64,itemRoomMarker);
+					self.itemRoomX = tempX;
+					self.itemRoomY = tempY;
 				}
 				else if (specialRooms==1){
-					room_instance_add(roomList[roomCount+specialRooms],roomWidth/2,roomHeight/2,bossRoomMarker);
+					room_instance_add(roomList[roomCount+specialRooms],roomWidth/2,roomHeight/2+64,bossRoomMarker);
+					self.bossRoomX = tempX;
+					self.bossRoomY = tempY;
 				}
 				var tempPos;
 				tempPos[0] = tempX;
@@ -131,14 +137,14 @@ for (var mapX = 0;mapX<mapWidth;mapX+=1){
 			room_set_persistent(roomToBeMade,true);
 			for (var j =0;j<13;j+=1){
 				if (j!=6){
-					room_instance_add(roomToBeMade,32+64*j,32,collisionObject);
+					room_instance_add(roomToBeMade,32+64*j,32+64,collisionObject);
 					room_instance_add(roomToBeMade,32+64*j,roomHeight-32,collisionObject);
 				}
 			}
 			for (var j = 1;j<8;j+=1){
 				if (j!=4){
-					room_instance_add(roomToBeMade,32,32+64*j,collisionObject);
-					room_instance_add(roomToBeMade,roomWidth-32,32+64*j,collisionObject);
+					room_instance_add(roomToBeMade,32,32+64*j+64,collisionObject);
+					room_instance_add(roomToBeMade,roomWidth-32,32+64*j+64,collisionObject);
 				}
 			}
 			for (var i = 0;i<specialRooms;i+=1){
@@ -149,7 +155,7 @@ for (var mapX = 0;mapX<mapWidth;mapX+=1){
 				else{
 					var randChance = irandom_range(0,10);
 					if (randChance>3){
-						room_instance_add(roomToBeMade,roomWidth/2,roomHeight/2,enemySpawner);
+						room_instance_add(roomToBeMade,roomWidth/2,roomHeight/2+64,enemySpawner);
 					}
 				}
 			}

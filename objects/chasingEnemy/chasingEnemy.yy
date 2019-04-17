@@ -36,7 +36,16 @@
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
-    "overriddenProperties": null,
+    "overriddenProperties": [
+        {
+            "id": "5fd11f9a-f964-48d5-b78d-b1837435aa1d",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "1811a20f-e987-4982-a46a-0b98724f2c19",
+            "propertyId": "276bc242-e5ec-424b-9bc3-b21d39033ff6",
+            "value": "0"
+        }
+    ],
     "parentObjectId": "1811a20f-e987-4982-a46a-0b98724f2c19",
     "persistent": false,
     "physicsAngularDamping": 0.1,
@@ -92,20 +101,6 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "curDamageTick",
-            "varType": 0
-        },
-        {
-            "id": "16559401-67d6-4ac6-82c3-365130bf7060",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "damage",
             "varType": 0
         },
         {

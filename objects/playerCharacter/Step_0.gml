@@ -5,12 +5,12 @@ var tempX = 0;
 var curImage = 0;
 var curDamage = self.playerDamage;
 var curSpeed = self.charSpeed;
-globalvar doors;
-
+var curProjectileSpeed = self.projectileSpeed;
 if (self.curHealth<=0){
 	instance_destroy();
 }
 curFireTime-=delta_time/1000000;
+curMercyTimer-=delta_time/1000000;
 if keyboard_check(ord("W")){
 	tempY-=charSpeed;
 	curImage = 4;
@@ -32,8 +32,8 @@ if keyboard_check(vk_up) and curFireTime<=0{
 	curImage = 4;
 	var inst = instance_create_depth(self.x,self.y,self.depth,bottle);
 	with (inst){
-		xDir = tempX;
-		yDir = -curSpeed;
+		xDir = 0;
+		yDir = -curProjectileSpeed;
 		damage = curDamage;
 	}
 }
@@ -42,8 +42,8 @@ else if keyboard_check(vk_down) and curFireTime<=0{
 	curImage = 1;
 	var inst = instance_create_depth(self.x,self.y,self.depth,bottle);
 	with (inst){
-		xDir = tempX;
-		yDir = curSpeed;
+		xDir = 0;
+		yDir = curProjectileSpeed;
 		damage = curDamage;
 	}
 }
@@ -52,8 +52,8 @@ else if keyboard_check(vk_left) and curFireTime<=0{
 	curImage = 3;
 	var inst = instance_create_depth(self.x,self.y,self.depth,bottle);
 	with (inst){
-		xDir = -curSpeed;
-		yDir = tempY;
+		xDir = -curProjectileSpeed;
+		yDir = 0;
 		damage = curDamage;
 	}
 }
@@ -62,8 +62,8 @@ else if keyboard_check(vk_right) and curFireTime<=0{
 	curImage = 2;
 	var inst = instance_create_depth(self.x,self.y,self.depth,bottle);
 	with (inst){
-		xDir = curSpeed;
-		yDir = tempY;
+		xDir = curProjectileSpeed;
+		yDir = 0;
 		damage = curDamage;
 	}
 }

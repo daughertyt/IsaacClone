@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "itemRoomMarker",
     "eventList": [
-        
+        {
+            "id": "7dff9a7d-3bd8-4b05-87aa-3752162709cc",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "efac8c42-b048-403d-9ca1-242c8f3d9ac4"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -24,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "bb9f2aad-84e2-49f2-8013-e4c661997d29",
+    "spriteId": "3cc9b55b-6b79-4377-b999-151fb7f78d47",
     "visible": true
 }

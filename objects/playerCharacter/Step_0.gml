@@ -6,28 +6,32 @@ var curImage = 0;
 var curDamage = self.playerDamage;
 var curSpeed = self.charSpeed;
 var curProjectileSpeed = self.projectileSpeed;
+var canMove = true;
 if (self.curHealth<=0){
 	instance_destroy();
 }
+if (instance_exists(noMove)){
+	canMove=false;
+}
 curFireTime-=delta_time/1000000;
 curMercyTimer-=delta_time/1000000;
-if keyboard_check(ord("W")){
+if keyboard_check(ord("W")) and canMove{
 	tempY-=charSpeed;
 	curImage = 4;
 }
-if keyboard_check(ord("S")){
+if keyboard_check(ord("S")) and canMove{
 	tempY+=charSpeed;
 	curImage = 1;
 }
-if keyboard_check(ord("A")){
+if keyboard_check(ord("A")) and canMove{
 	tempX-=charSpeed;
 	curImage = 3;
 }
-if keyboard_check(ord("D")){
+if keyboard_check(ord("D")) and canMove{
 	tempX+=charSpeed;
 	curImage = 2;
 }
-if keyboard_check(vk_up) and curFireTime<=0{
+if keyboard_check(vk_up) and curFireTime<=0 and canMove{
 	curFireTime = fireRate;
 	curImage = 4;
 	var inst = instance_create_depth(self.x,self.y,self.depth,bottle);
@@ -37,7 +41,7 @@ if keyboard_check(vk_up) and curFireTime<=0{
 		damage = curDamage;
 	}
 }
-else if keyboard_check(vk_down) and curFireTime<=0{
+else if keyboard_check(vk_down) and curFireTime<=0 and canMove{
 	curFireTime = fireRate;
 	curImage = 1;
 	var inst = instance_create_depth(self.x,self.y,self.depth,bottle);
@@ -47,7 +51,7 @@ else if keyboard_check(vk_down) and curFireTime<=0{
 		damage = curDamage;
 	}
 }
-else if keyboard_check(vk_left) and curFireTime<=0{
+else if keyboard_check(vk_left) and curFireTime<=0 and canMove{
 	curFireTime = fireRate;
 	curImage = 3;
 	var inst = instance_create_depth(self.x,self.y,self.depth,bottle);
@@ -57,7 +61,7 @@ else if keyboard_check(vk_left) and curFireTime<=0{
 		damage = curDamage;
 	}
 }
-else if keyboard_check(vk_right) and curFireTime<=0{
+else if keyboard_check(vk_right) and curFireTime<=0 and canMove{
 	curFireTime = fireRate;
 	curImage = 2;
 	var inst = instance_create_depth(self.x,self.y,self.depth,bottle);

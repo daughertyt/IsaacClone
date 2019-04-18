@@ -79,6 +79,20 @@
             "value": "0",
             "varName": "bossDefeated",
             "varType": 0
+        },
+        {
+            "id": "83ec21cb-0a7c-4ecc-9c52-00098d6c7cf6",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "curFloor",
+            "varType": 0
         }
     ],
     "solid": false,

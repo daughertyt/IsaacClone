@@ -24,6 +24,14 @@
             "objectId": "1811a20f-e987-4982-a46a-0b98724f2c19",
             "propertyId": "f88c855a-e9a1-4b9e-8e4b-7cf975eaf0c1",
             "value": "10"
+        },
+        {
+            "id": "89c5f2df-5faa-4e6b-8cf9-f57ea48421ae",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "1811a20f-e987-4982-a46a-0b98724f2c19",
+            "propertyId": "276bc242-e5ec-424b-9bc3-b21d39033ff6",
+            "value": "1"
         }
     ],
     "parentObjectId": "1811a20f-e987-4982-a46a-0b98724f2c19",
@@ -67,20 +75,6 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "curFireTime",
-            "varType": 0
-        },
-        {
-            "id": "b32a8888-6a31-42d7-aaa4-cef14275d85d",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "1",
-            "varName": "damage2",
             "varType": 0
         }
     ],

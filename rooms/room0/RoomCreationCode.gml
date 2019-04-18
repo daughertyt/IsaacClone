@@ -21,4 +21,5 @@ for (var i = 1;i<8;i+=1){
 	}
 }
 startDoor.roomID=global.startRoom;
+startDoor.doorType=3;
 startDoor.isAWall=0;

@@ -73,6 +73,16 @@
             "enumb": 0,
             "eventtype": 4,
             "m_owner": "bb1e8f19-2e32-48c0-8035-935ef43f6897"
+        },
+        {
+            "id": "d60a257b-754d-469e-a424-c877dae407d0",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 1,
+            "m_owner": "bb1e8f19-2e32-48c0-8035-935ef43f6897"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -102,9 +112,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "3",
+            "value": "2.5",
             "varName": "charSpeed",
-            "varType": 1
+            "varType": 0
         },
         {
             "id": "08f509e4-d44b-409d-962e-60746421ecd2",
@@ -116,7 +126,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": ".1",
+            "value": "1",
             "varName": "fireRate",
             "varType": 0
         },
@@ -286,6 +296,20 @@
             "resourceFilter": 1023,
             "value": "3",
             "varName": "projectileSpeed",
+            "varType": 0
+        },
+        {
+            "id": "0a4d8c4d-e788-4f9c-98c3-1822ff8958c7",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "violentDeath",
             "varType": 0
         }
     ],

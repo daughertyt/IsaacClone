@@ -1,9 +1,10 @@
-instance_create_depth(320,320,0,playerCharacter);
+instance_create_depth(320,320,0,playerCharacter1);
 var startDoor = instance_create_depth(room_width/2,room_height/2+32,0,doorWay);
 var tempDoor = instance_create_depth(room_width/2,32+64,0,doorWay);
 tempDoor.isAWall=1;
 var tempDoor1 = instance_create_depth(32,room_height/2+32,0,doorWay);
-tempDoor1.isAWall=1;
+tempDoor1.isAWall=0;
+tempDoor1.roomID=CharSelect;
 var tempDoor2 = instance_create_depth(room_width/2,room_height-32,0,doorWay);
 tempDoor2.isAWall=1;
 var tempDoor3 = instance_create_depth(room_width-32,room_height/2+32,0,doorWay);

@@ -93,6 +93,20 @@
             "value": "0",
             "varName": "curFloor",
             "varType": 0
+        },
+        {
+            "id": "8a1f18c4-5f76-4ca1-9349-6959c6825fbd",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "bossType",
+            "varType": 0
         }
     ],
     "solid": false,

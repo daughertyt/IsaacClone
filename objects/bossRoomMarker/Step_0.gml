@@ -16,6 +16,6 @@ else{
 		else{
 			instance_create_depth(self.x,self.y-32,0,healthUp);
 		}
-		self.bossDefeated=0;
+		self.bossDefeated=2;
 	}
 }

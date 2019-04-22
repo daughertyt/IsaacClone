@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (curRoomX<mapWidth and curFloor==1){
+if (curRoomX<mapWidth and curFloor==1 and global.resetRooms==false){
 	if (curRoomY<mapHeight){
 		if (ds_grid_get(global.firstFloor,curRoomX,curRoomY)!=0 and room_exists(ds_grid_get(global.firstFloor,curRoomX,curRoomY))){
 			
@@ -166,7 +166,7 @@ else if (curFloor==1 and curRoomX>=mapWidth){
 
 
 
-if (curRoomX<mapWidth and curFloor==2){
+if (curRoomX<mapWidth and curFloor==2 and global.resetRooms==false){
 	if (curRoomY<mapHeight){
 		if (ds_grid_get(global.secondFloor,curRoomX,curRoomY)!=0 and room_exists(ds_grid_get(global.secondFloor,curRoomX,curRoomY))){
 			
@@ -279,8 +279,127 @@ if (curRoomX<mapWidth and curFloor==2){
 				curRoomY=0;
 				curRoomX+=1;
 				if (curRoomX>=mapWidth){
+					curRoomX=0;
+					curRoomY=0;
+					curFloor+=1
 					instance_destroy(global.loadScreen);
 					room_goto(room0);
+				}
+			}
+		}
+	}
+}
+if (instance_exists(noMove)){
+}
+else{
+	if (ds_list_find_value(global.livingChars,1)==0){
+		if (ds_list_find_value(global.livingChars,2)==0){
+			if (ds_list_find_value(global.livingChars,3)==0){
+				var gameOver = instance_create_depth(0,0,-5,noMove);
+				gameOver.endScreen=1;
+			}
+		}
+	}
+}
+if (global.resetRooms==true){
+	if (curRoomX<mapWidth and curFloor==1){
+		if (curRoomY<mapHeight){
+			if (ds_grid_get(global.firstFloor,curRoomX,curRoomY)!=0 and room_exists(ds_grid_get(global.firstFloor,curRoomX,curRoomY))){
+			
+				var roomToBeMade = ds_grid_get(global.firstFloor,curRoomX,curRoomY);
+				if (flipBit==0){
+					flipBit=1;
+					room_goto(roomToBeMade)
+				}
+				else{
+					flipBit=0;
+					if(instance_exists(itemRoomMarker)){
+					}
+					else if (instance_exists(bossRoomMarker)){
+						if (instance_exists(baseBoss)){
+							instance_destroy(instance_find(baseBoss,0));
+						}
+						var bossSpawner = instance_find(bossRoomMarker,0);
+						bossSpawner.canSpawn=1;
+						bossSpawner.curFloor=self.curFloor;
+					}
+					else if (instance_exists(enemySpawner)){
+						while(instance_exists(baseEnemy)){
+							instance_destroy(instance_find(baseEnemy,0))
+						}
+						var spawner = instance_find(enemySpawner,0);
+						spawner.canSpawn = 1;
+					}
+					else if (roomToBeMade==global.startRoom){
+					
+					}
+				}
+			}
+			if (flipBit==0){
+				curRoomY+=1;
+				if (curRoomY>=mapHeight){
+					curRoomY=0;
+					curRoomX+=1;
+					if (curRoomX>=mapWidth){
+					}
+				}
+			}
+		}
+	}
+	else if (curFloor==1 and curRoomX>=mapWidth){
+		curFloor=2;
+		curRoomX=0;
+		curRoomY=0;
+	}
+
+
+
+	if (curRoomX<mapWidth and curFloor==2){
+		if (curRoomY<mapHeight){
+			if (ds_grid_get(global.secondFloor,curRoomX,curRoomY)!=0 and room_exists(ds_grid_get(global.secondFloor,curRoomX,curRoomY))){
+			
+				var roomToBeMade = ds_grid_get(global.secondFloor,curRoomX,curRoomY);
+				if (flipBit==0){
+					flipBit=1;
+					room_goto(roomToBeMade)
+				}
+				else{
+					flipBit=0;
+					if(instance_exists(itemRoomMarker)){
+					}
+					else if (instance_exists(bossRoomMarker)){
+						if (instance_exists(baseBoss)){
+							instance_destroy(instance_find(baseBoss,0));
+						}
+						var bossSpawner = instance_find(bossRoomMarker,0);
+						bossSpawner.canSpawn=1;
+						bossSpawner.curFloor=self.curFloor;
+					}
+					else if (instance_exists(enemySpawner)){
+						while(instance_exists(baseEnemy)){
+							instance_destroy(instance_find(baseEnemy,0))
+						}
+						var spawner = instance_find(enemySpawner,0);
+						spawner.canSpawn = 1;
+					}
+					else if (roomToBeMade==global.startRoom){
+					
+					}
+				}
+			}
+			if (flipBit==0){
+				curRoomY+=1;
+				if (curRoomY>=mapHeight){
+					curRoomY=0;
+					curRoomX+=1;
+					if (curRoomX>=mapWidth){
+						curRoomX=0;
+						curRoomY=0;
+						curFloor+=1;
+						instance_destroy(global.loadScreen);
+						room_goto(room0);
+						global.resetRooms=false;
+					}
 				}
 			}
 		}

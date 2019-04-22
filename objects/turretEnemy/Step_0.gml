@@ -9,11 +9,11 @@ self.curFireTime -= delta_time/1000000;
 if instance_exists(playerCharacter){
 	var playerTarget = instance_find(playerCharacter,0);
 	if (self.curFireTime<=0){
-		self.curFireTime=self.fireRate;
+		self.curFireTime=self.fireRate+random_range(-1,2);
 		var tempDamage = self.damage;
 		var inst = instance_create_depth(self.x,self.y,self.depth,enemyProjectile);
 		with (inst){
-			inst.curSpeed =1;
+			inst.curSpeed =3;
 			inst.direction=point_direction(self.x,self.y,playerTarget.x,playerTarget.y);
 			inst.damage=tempDamage;
 		}

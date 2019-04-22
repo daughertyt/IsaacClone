@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "0946672d-2f87-4a69-9754-4b7233d92e89",
+            "Value": {
+                "id": "070955a5-1d01-4405-aa33-c925d73bb766",
+                "resourcePath": "objects\\jailPlaceholder\\jailPlaceholder.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0d6410a0-6872-4737-acab-e42be6e16527",
             "Value": {
                 "id": "87228745-b707-490c-a00d-a4bbee82ac06",
@@ -52,6 +60,14 @@
                 "id": "cdf31d38-c9d9-466b-96ce-382dad99d27e",
                 "resourcePath": "objects\\roomMarker\\roomMarker.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "1687e313-5337-497e-b62f-d0deeb245d45",
+            "Value": {
+                "id": "c36fec37-39a0-4481-b5e9-ead9afac3cfe",
+                "resourcePath": "views\\1687e313-5337-497e-b62f-d0deeb245d45.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -119,6 +135,14 @@
             }
         },
         {
+            "Key": "38c0296b-7cd9-4da2-af9d-9844a2a96c66",
+            "Value": {
+                "id": "db7d3b96-1b39-4d10-9fd0-009427b35078",
+                "resourcePath": "sprites\\playerCharacterSprite2\\playerCharacterSprite2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3af3d246-fb5b-4b7e-8723-45aa41ad9537",
             "Value": {
                 "id": "f6cfd334-0ec4-435f-bad8-b51e5dbb511a",
@@ -140,6 +164,14 @@
                 "id": "c432f009-0fc0-42a6-8b75-144c24d61e24",
                 "resourcePath": "objects\\watcher\\watcher.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "45633165-a10f-4d42-adb0-06375f243699",
+            "Value": {
+                "id": "c6594a20-eaf0-4f23-b880-9bb212290ec0",
+                "resourcePath": "sprites\\playerCharacterSprite3\\playerCharacterSprite3.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -170,7 +202,7 @@
             "Key": "53313405-e3b9-4dde-82da-181757ca61c4",
             "Value": {
                 "id": "d8042476-d892-49a9-96c3-b69c5f85f93c",
-                "resourcePath": "rooms\\templateRoom\\templateRoom.yy",
+                "resourcePath": "rooms\\CharSelect\\CharSelect.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -223,6 +255,14 @@
             }
         },
         {
+            "Key": "689b8405-3115-4aa0-8954-fe1879c83a22",
+            "Value": {
+                "id": "5e36f1b6-462e-44bf-a5c1-4cc82a7f23d6",
+                "resourcePath": "sprites\\playerCharacterSpriteJail\\playerCharacterSpriteJail.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "690e2ff7-129d-492b-96f0-776950ddd14d",
             "Value": {
                 "id": "86c45017-d8a9-483b-8b7f-31b7c1a45d7a",
@@ -271,6 +311,14 @@
             }
         },
         {
+            "Key": "78648093-6777-4f53-a69e-0250e1932c42",
+            "Value": {
+                "id": "48b08bf0-dd98-482d-aaf8-ddc75017a6b2",
+                "resourcePath": "sprites\\emptyJail\\emptyJail.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8313a414-b79e-4f89-bc61-44a02f9fd346",
             "Value": {
                 "id": "1ad938b9-f368-4ba0-beff-86714585e9c2",
@@ -308,6 +356,14 @@
                 "id": "d8f7be47-bdc8-4fb3-ba6f-3cfcbc651e34",
                 "resourcePath": "views\\8dc0c96b-bb3b-4b3a-92fb-a4e4105800d1.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8de3350a-5fea-44b3-9afa-0bd5c22ced27",
+            "Value": {
+                "id": "82a2963d-64de-4684-b9f0-ed7601f1db5f",
+                "resourcePath": "objects\\playerCharacter2\\playerCharacter2.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -471,11 +527,43 @@
             }
         },
         {
+            "Key": "bfa5937d-1545-4251-903f-9dda7c853329",
+            "Value": {
+                "id": "333c1161-08e9-4205-964c-3b8c264e8dd0",
+                "resourcePath": "objects\\playerCharacter3\\playerCharacter3.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c5ff9cc6-8d76-46e8-b068-ffd69114a9a6",
             "Value": {
                 "id": "bb8e8c60-4d5d-4d6b-bb7f-3d76898bd56f",
                 "resourcePath": "objects\\enemyProjectile\\enemyProjectile.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c735bce4-b5ca-4e56-a634-12a721104243",
+            "Value": {
+                "id": "035363e7-d38f-4df3-9405-665cbbf6fc7f",
+                "resourcePath": "sprites\\sprite31\\sprite31.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c73faa4a-8f9e-4e01-9dd5-d047f9c77f98",
+            "Value": {
+                "id": "920c2989-95ff-4f16-b095-ad9956b7ac29",
+                "resourcePath": "sprites\\playerCharacterSprite2Jail\\playerCharacterSprite2Jail.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c769af89-f304-4951-b8fc-052abb0526aa",
+            "Value": {
+                "id": "92735a5c-e9f8-4fa8-aeb4-d9aece4f0e7e",
+                "resourcePath": "sprites\\playerCharacterSprite3Jail\\playerCharacterSprite3Jail.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -507,6 +595,14 @@
             "Value": {
                 "id": "af69a7a3-6722-4bd6-b2ce-a25ce51d1955",
                 "resourcePath": "objects\\doorWay\\doorWay.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d4eae50d-703c-4463-b7d5-eadf221e918f",
+            "Value": {
+                "id": "f021abea-ac05-42e7-8089-5d559e3e3a61",
+                "resourcePath": "objects\\playerCharacter1\\playerCharacter1.yy",
                 "resourceType": "GMObject"
             }
         },

@@ -69,6 +69,20 @@
             "value": "0",
             "varName": "damage",
             "varType": 0
+        },
+        {
+            "id": "87a6727d-0b3d-49f9-bad1-7aefc0ea81ae",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "violentDeath",
+            "varType": 0
         }
     ],
     "solid": false,

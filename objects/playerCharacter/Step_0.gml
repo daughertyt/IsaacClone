@@ -8,6 +8,8 @@ var curSpeed = self.charSpeed;
 var curProjectileSpeed = self.projectileSpeed;
 var canMove = true;
 if (self.curHealth<=0){
+	self.violentDeath=1;
+	room_goto(room0);
 	instance_destroy();
 }
 if (instance_exists(noMove)){

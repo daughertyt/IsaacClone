@@ -8,5 +8,8 @@ if (self.canSpawn == 1){
 	else if (bossType==1){
 		instance_create_depth(room_width/2,room_height/2+32,0,slimeBoss);
 	}
+	else if (bossType==2){
+		instance_create_depth(room_width/2,room_height/2+32,0,spreadBoss);
+	}
 	self.canSpawn=0;
 }

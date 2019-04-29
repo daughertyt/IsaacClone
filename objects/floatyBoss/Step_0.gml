@@ -6,7 +6,7 @@ event_inherited();
 
 curFireTime-=delta_time/1000000;
 if (self.curHealth<self.hpThreshold){
-	self.curSpeed+=2;
+	self.curSpeed+=1;
 	motion_set(self.direction,self.curSpeed);
 	self.hpThreshold-=50;
 }

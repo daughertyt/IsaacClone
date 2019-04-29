@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-	if (self.violentDeath==1){
+if (self.violentDeath==1){
 	var randChance = irandom_range(1,2);
 	for (var i = 0;i<randChance;i+=1){
 		var heartdrop = irandom_range(0,2);

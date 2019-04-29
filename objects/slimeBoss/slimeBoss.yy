@@ -33,6 +33,26 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "690e2ff7-129d-492b-96f0-776950ddd14d"
+        },
+        {
+            "id": "779329c4-ceaa-44e4-9d48-39209bc5eff2",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "6fef60c2-b729-4e41-abb0-7a64d14da56d",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "690e2ff7-129d-492b-96f0-776950ddd14d"
+        },
+        {
+            "id": "c59fb298-0a20-4f9b-81eb-9ae12bfd563a",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "d0df3e6e-0bf2-426a-89db-bab8ab08ac87",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "690e2ff7-129d-492b-96f0-776950ddd14d"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -43,7 +63,7 @@
             "mvc": "1.0",
             "objectId": "1811a20f-e987-4982-a46a-0b98724f2c19",
             "propertyId": "f88c855a-e9a1-4b9e-8e4b-7cf975eaf0c1",
-            "value": "200"
+            "value": "150"
         },
         {
             "id": "41cadff6-0bca-4823-8a7f-55dfd0b748b4",
@@ -79,7 +99,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "5",
+            "value": "7",
             "varName": "spawnTimer",
             "varType": 0
         },
@@ -93,7 +113,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "2",
+            "value": "4",
             "varName": "damageSpawnTimer",
             "varType": 0
         },
@@ -123,6 +143,62 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "curDamageSpawnTimer",
+            "varType": 0
+        },
+        {
+            "id": "e89f8630-f9a3-4516-a394-c7a70a312ca2",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": ".2",
+            "varName": "curSpeed",
+            "varType": 0
+        },
+        {
+            "id": "1a94c58f-bdef-490d-8821-a4279448b1ed",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "playerTarget",
+            "varType": 0
+        },
+        {
+            "id": "68c7813d-4a9c-45a0-b91f-ef14da3549ea",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "oldX",
+            "varType": 0
+        },
+        {
+            "id": "18c313b3-5df0-4043-b5ea-2aa20e0bfb27",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "oldY",
             "varType": 0
         }
     ],
